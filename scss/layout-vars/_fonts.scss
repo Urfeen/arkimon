@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Mulish";
+  src: url("../../fonts/Mulish-VariableFont_wght.eot");
+  src: local("☺"), url("../../fonts/Mulish-VariableFont_wght.woff") format("woff"),
+    url("../../fonts/Mulish-VariableFont_wght.ttf") format("truetype"),
+    url("../../fonts/Mulish-VariableFont_wght.svg") format("svg");
+}
+
+@mixin HA {
+  font-family: "Mulish";
+  font-weight: 900;
+  font-size: 100px;
+}
+
+@mixin HB {
+  font-family: "Mulish";
+  font-weight: 900;
+  font-size: 72px;
+}
+
+@mixin HC {
+  font-family: "Mulish";
+  font-weight: 900;
+  font-size: 60px;
+}
+
+@mixin H1 {
+  font-family: "Mulish";
+  font-weight: 800;
+  font-size: 52px;
+}
+
+@mixin H2 {
+  font-family: "Mulish";
+  font-weight: 800;
+  font-size: 40px;
+}
+
+@mixin H3 {
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 28px;
+}
+
+@mixin H4 {
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 24px;
+}
+
+@mixin H5 {
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 18px;
+}
+
+@mixin P15 {
+  font-family: "Mulish";
+  font-weight: 400;
+  font-size: 15px;
+}
+
+@mixin P13 {
+  font-family: "Mulish";
+  font-weight: 400;
+  font-size: 13px;
+}

@@ -1,0 +1,19 @@
+// settings
+@import "./reset-css";
+@import "./adaptive-font";
+// layout vars
+@import "./layout-vars/colors";
+@import "./layout-vars/fonts";
+// blocks
+@import "./blocks/header";
+
+.wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0px auto;
+}
