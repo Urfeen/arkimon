@@ -1,18 +1,9 @@
-//for work
-// @font-face {
-//   font-family: "Mulish";
-//   src: url("../../fonts/Mulish-VariableFont_wght.eot");
-//   src: local("☺"), url("../../fonts/Mulish-VariableFont_wght.woff") format("woff"),
-//     url("../../fonts/Mulish-VariableFont_wght.ttf") format("truetype"),
-//     url("../../fonts/Mulish-VariableFont_wght.svg") format("svg");
-// }
-//for GitHub-pages
 @font-face {
   font-family: "Mulish";
-  src: url("../arkimon/fonts/Mulish-VariableFont_wght.eot");
-  src: local("☺"), url("../arkimon/fonts/Mulish-VariableFont_wght.woff") format("woff"),
-    url("../arkimon/fonts/Mulish-VariableFont_wght.ttf") format("truetype"),
-    url("../arkimon/fonts/Mulish-VariableFont_wght.svg") format("svg");
+  src: url("../../fonts/Mulish-VariableFont_wght.eot");
+  src: local("☺"), url("../../fonts/Mulish-VariableFont_wght.woff") format("woff"),
+    url("../../fonts/Mulish-VariableFont_wght.ttf") format("truetype"),
+    url("../../fonts/Mulish-VariableFont_wght.svg") format("svg");
 }
 
 @mixin HA {

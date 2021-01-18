@@ -44,7 +44,7 @@
 
   @media (max-width: 630px) {
     .header__list {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
@@ -52,16 +52,17 @@
       z-index: -1;
       padding: 70px 0px 15px 0px;
       flex-direction: column;
+      transform: translate(0, -100%);
+      transition: 0.3s;
       li {
         margin: 0px 0px 20px 43px;
         opacity: 0;
         transition: 0.3s;
       }
-      transform: translate(0, -100%);
-      transition: 0.3s;
     }
     .header__list-open {
       transform: translate(0, 0);
+      box-shadow: 0 50vh 0 50vh rgba(0, 0, 0, 0.8);
     }
   }
 
