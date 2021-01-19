@@ -1,0 +1,73 @@
+.feature {
+  margin: 180px 0;
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__column {
+    max-width: 280px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    transition: 0.2s;
+    &:hover {
+      & {
+        transform: scale(1.1);
+        border: 1px solid $gray4;
+      }
+      .feature__arrow {
+        opacity: 1;
+        margin: 25px 0px;
+        svg {
+          width: 62px;
+          &:hover {
+            fill: $accent-bright1;
+          }
+        }
+      }
+    }
+  }
+
+  &__logo {
+    width: 60px;
+    height: 60px;
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    margin: 20px 0px 15px 0px;
+  }
+
+  &__subtitle {
+    @include P13;
+    color: $gray4;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+
+  &__arrow {
+    opacity: 0;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    width: 62px;
+    svg {
+      width: 0px;
+      height: 15px;
+      fill: $accent;
+      transition: 0.2s;
+    }
+  }
+}

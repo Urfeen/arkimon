@@ -12,9 +12,8 @@
   }
 
   &_subtitle {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 147%;
+    @include H5;
+    line-height: 150%;
     letter-spacing: 0.02em;
     color: #9b9b9b;
     max-width: 400px;
