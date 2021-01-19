@@ -1,0 +1,27 @@
+.button {
+  display: block;
+  width: 209px;
+  height: 53px;
+  border-radius: 2px;
+  background: $primary-dark1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+  span {
+    color: $bright;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    &::after {
+      content: url("../../img/icons/arrow.svg");
+      padding: 0px 0px 0px 10px;
+    }
+  }
+  &:hover,
+  &:focus {
+    background: $primary;
+    transform: scale(1.02);
+  }
+}

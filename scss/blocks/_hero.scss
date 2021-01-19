@@ -1,0 +1,23 @@
+.hero {
+  background: url("../../img/hero-bg.svg") 100% 100% / 700px no-repeat;
+  &__body {
+    padding: 100px 0px 0px 0px;
+    height: 925px;
+  }
+
+  &__title {
+    @include HC;
+    max-width: 510px;
+    margin: 270px 0px 50px 0px;
+  }
+
+  &_subtitle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 147%;
+    letter-spacing: 0.02em;
+    color: #9b9b9b;
+    max-width: 400px;
+    margin: 0px 0px 50px 0px;
+  }
+}

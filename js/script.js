@@ -9,11 +9,13 @@ function toggleBurger() {
     setTimeout(() => {
       document.querySelectorAll(".header__list li").forEach(e => {
         e.style.opacity = 1;
+        document.querySelector(".header__list-open").style.boxShadow = "0 50vh 0 50vh rgba(0, 0, 0, 0.8)";
       })
     }, 200);
   } else {
     document.querySelectorAll(".header__list li").forEach(e => {
       e.style.opacity = 0;
+      document.querySelector(".header__list-open").style.boxShadow = "none";
     })
     setTimeout(() => {
       this.classList.remove("burger-cross");

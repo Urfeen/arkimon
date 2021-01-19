@@ -7,15 +7,15 @@
 // blocks
 @import "./blocks/header";
 @import "./blocks/burger-menu";
+@import "./blocks/hero";
+//elements
+@import "./elements/button";
 
 .wrapper {
   position: relative;
   top: 0;
   left: 0;
-}
-
-.content {
-  padding: 60px 0px 0px 0px;
+  font-family: "Mulish";
 }
 
 .container {
