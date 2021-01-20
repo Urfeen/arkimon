@@ -2,23 +2,29 @@
   background: url("../../img/services-bg.svg") 0 100% / 650px no-repeat;
   &__body {
     height: 515px;
+    display: flex;
+    justify-content: flex-end;
   }
 
   &__column {
+    max-width: 480px;
   }
 
   &__title {
+    margin: 130px 0px 0px 0px;
+    @include H2;
   }
 
   &__grid {
+    margin: 80px 0px 0px 0px;
     display: grid;
+    row-gap: 50px;
     grid-template-columns: 1fr 1fr;
   }
 
   &__item {
+    @include H3;
+    font-weight: normal;
+    color: $gray4;
   }
-}
-.container {
-}
-.titleH2 {
 }

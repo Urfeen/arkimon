@@ -1,9 +1,9 @@
 @font-face {
   font-family: "Mulish";
-  src: url("./../../fonts/Mulish-VariableFont_wght.eot");
-  src: local("☺"), url("./../../fonts/Mulish-VariableFont_wght.woff") format("woff"),
-    url("./../../fonts/Mulish-VariableFont_wght.ttf") format("truetype"),
-    url("./../../fonts/Mulish-VariableFont_wght.svg") format("svg");
+  src: url("../../fonts/Mulish-VariableFont_wght.eot");
+  src: local("☺"), url("../../fonts/Mulish-VariableFont_wght.woff") format("woff"),
+    url("../../fonts/Mulish-VariableFont_wght.ttf") format("truetype"),
+    url("../../fonts/Mulish-VariableFont_wght.svg") format("svg");
 }
 
 @mixin HA {
@@ -32,6 +32,7 @@
 }
 
 @mixin H2 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 800;
   font-size: 40px;
   color: $primary-dark2;
