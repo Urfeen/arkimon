@@ -1,2 +1,2 @@
 # ARKIMON site
-DEMO: https://urfeen.github.io/arkimon/
+DEMO: https://brave-keller-ec88f1.netlify.app/
