@@ -10,7 +10,7 @@
       setTimeout(() => {
         document.querySelectorAll(".header__list li").forEach(e => {
           e.style.opacity = 1;
-          document.querySelector(".header__list-open").style.boxShadow = "0  100vh 0 1000vh rgba(0, 0, 0, 0.8)";
+          document.querySelector(".header__list-open").style.boxShadow = "0  100vh 0 100vh rgba(0, 0, 0, 0.8)";
         })
       }, 200);
     } else {
@@ -33,3 +33,4 @@
       : menu.classList.add("header__list-open");
   }
 })();
+

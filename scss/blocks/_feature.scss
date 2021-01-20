@@ -9,19 +9,21 @@
   &__column {
     max-width: 280px;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    max-height: 100%;
     border-radius: 10px;
     transition: 0.2s;
+    border: 1px solid rgba(0, 0, 0, 0);
     &:hover {
+      .feature__logo,
+      .feature__title,
+      .feature__subtitle {
+        top: 0;
+      }
       & {
-        transform: scale(1.1);
         border: 1px solid $gray4;
       }
       .feature__arrow {
         opacity: 1;
-        margin: 25px 0px;
         svg {
           width: 62px;
           &:hover {
@@ -56,13 +58,22 @@
     letter-spacing: 0.02em;
   }
 
+  &__logo,
+  &__title,
+  &__subtitle {
+    position: relative;
+    top: 65px;
+    left: 0;
+    transition: 0.2s;
+  }
+
   &__arrow {
     opacity: 0;
-    margin: 0px;
+    margin: 25px 0;
     display: flex;
     align-items: center;
-    transition: 0.2s;
     width: 62px;
+    transition: 0.3s;
     svg {
       width: 0px;
       height: 15px;

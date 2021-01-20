@@ -1,0 +1,24 @@
+.services {
+  background: url("../../img/services-bg.svg") 0 100% / 650px no-repeat;
+  &__body {
+    height: 515px;
+  }
+
+  &__column {
+  }
+
+  &__title {
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__item {
+  }
+}
+.container {
+}
+.titleH2 {
+}
