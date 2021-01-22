@@ -1,13 +1,14 @@
 .feature {
   margin: 160px 0 40px;
   &__body {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   &__column {
-    max-width: 280px;
+    max-width: 330px;
     padding: 10px;
     max-height: 100%;
     border-radius: 10px;
@@ -45,14 +46,12 @@
   }
 
   &__title {
-    font-weight: bold;
-    font-size: 18px;
-    letter-spacing: 0.02em;
+    @include H4;
     margin: 20px 0px 15px 0px;
   }
 
   &__subtitle {
-    @include P13;
+    @include H5;
     color: $gray4;
     line-height: 150%;
     letter-spacing: 0.02em;

@@ -11,7 +11,7 @@
     height: 100%;
   }
 
-  &__slider-controll {
+  &__slider-control {
     display: flex;
     align-items: center;
     .slick-arrow {
@@ -52,7 +52,6 @@
     .slick-slide {
       transition: 0.2s;
       opacity: 0.5;
-      transform: scale(1);
     }
     .slick-current {
       opacity: 1;

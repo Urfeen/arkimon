@@ -11,6 +11,8 @@
 @import "./blocks/feature";
 @import "./blocks/services";
 @import "./blocks/projects";
+@import "./blocks/feature2";
+@import "./blocks/testimonial";
 //elements
 @import "./elements/button";
 @import "./elements/titleH2";
@@ -28,4 +30,5 @@
   max-width: 1060px;
   margin: 0px auto;
   padding: 0px 10px;
+  height: 100%;
 }

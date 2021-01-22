@@ -1,0 +1,121 @@
+.testimonial {
+  margin: 80px 0px 0px 0px;
+  &__body {
+    min-height: 510px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    height: 510px;
+  }
+
+  &__column {
+  }
+  &__column:nth-child(1) {
+    width: 100%;
+    padding: 0px 120px 0px 0px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background: url("../../img/testimonial-bg.svg") 0 100% / 350px no-repeat;
+  }
+
+  &__current-avatar {
+    // display: flex;
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    .slick-track {
+      display: flex;
+      align-items: flex-start;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__column:nth-child(2) {
+    max-width: 595px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__slider-control {
+    display: flex;
+    align-items: center;
+    .slick-arrow {
+      font-size: 0;
+      width: 59px;
+      height: 15px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .slick-arrow.slick-prev {
+      background: url("../../img/icons/arrow3.svg") center / cover no-repeat;
+      transform: rotate(180deg);
+      margin: 0px 40px 0px 0px;
+    }
+    .slick-arrow.slick-next {
+      background: url("../../img/icons/arrow3.svg") center / cover no-repeat;
+    }
+    .slick-arrow.slick-disabled {
+      background: url("../../img/icons/arrow2.svg") center / cover no-repeat;
+      cursor: not-allowed;
+    }
+  }
+
+  &__slider {
+    margin: 95px 0px 0px 0px;
+    p {
+      @include H3;
+      line-height: 134.5%;
+      letter-spacing: 0.02em;
+    }
+  }
+  &__text {
+    margin: 0px 0px 75px 0px;
+    min-height: 186px;
+  }
+
+  &__appraisal-name {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 5px 0px;
+  }
+
+  &__appraisal {
+    margin: 0px 20px 0px 0px;
+  }
+
+  &__name {
+    @include H4;
+    color: $accent;
+  }
+
+  &__position {
+    @include P15;
+    color: $gray4;
+  }
+
+  &__slider {
+    .slick-list {
+      overflow: hidden;
+    }
+    .slick-track {
+      display: flex;
+      align-items: flex-start;
+    }
+    &__item {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 0 10px;
+    }
+  }
+}

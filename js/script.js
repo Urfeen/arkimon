@@ -36,10 +36,9 @@
 
 $(document).ready(function () {
   $(".projects__slider").slick({
-    appendArrows: $(".projects__slider-controll"),
+    appendArrows: $(".projects__slider-control"),
     slidesToShow: 3,
     infinite: false,
-    slidesToShow: 1,
     speed: 400,
     centerMode: true,
     variableWidth: true,
@@ -67,4 +66,22 @@ $(document).ready(function () {
       }
     ]
   });
+
+
+  $(".testimonial__slider").slick({
+    appendArrows: $(".testimonial__slider-control"),
+    infinite: false,
+    slidesToShow: 1,
+    speed: 400,
+    asNavFor: '.testimonial__current-avatar',
+  });
+  $(".testimonial__current-avatar").slick({
+    infinite: false,
+    slidesToShow: 1,
+    speed: 400,
+    arrows: false,
+    fade: true,
+    draggable: false,
+    touchMove: false,
+  })
 });
