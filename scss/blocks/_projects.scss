@@ -1,0 +1,61 @@
+.projects {
+  margin: 180px 0px 0px 0px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 90px 0px;
+  }
+
+  &__title {
+    @include H2;
+    height: 100%;
+  }
+
+  &__slider-controll {
+    display: flex;
+    align-items: center;
+    .slick-arrow {
+      font-size: 0;
+      width: 59px;
+      height: 15px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .slick-arrow.slick-prev {
+      background: url("../../img/icons/arrow3.svg") center / cover no-repeat;
+      transform: rotate(180deg);
+      margin: 0px 40px 0px 0px;
+    }
+    .slick-arrow.slick-next {
+      background: url("../../img/icons/arrow3.svg") center / cover no-repeat;
+    }
+    .slick-arrow.slick-disabled {
+      background: url("../../img/icons/arrow2.svg") center / cover no-repeat;
+      cursor: not-allowed;
+    }
+  }
+
+  .slider {
+    .slick-list {
+      overflow: hidden;
+    }
+    .slick-track {
+      display: flex;
+      align-items: flex-start;
+    }
+    &__item {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 0 10px;
+    }
+    .slick-slide {
+      transition: 0.2s;
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    .slick-current {
+      opacity: 1;
+    }
+  }
+}
