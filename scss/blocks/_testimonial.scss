@@ -9,9 +9,6 @@
     justify-content: space-between;
     height: 510px;
   }
-
-  &__column {
-  }
   &__column:nth-child(1) {
     width: 100%;
     padding: 0px 120px 0px 0px;
@@ -23,6 +20,8 @@
 
   &__current-avatar {
     // display: flex;
+    position: relative;
+    z-index: -1;
     width: 148px;
     height: 148px;
     border-radius: 50%;
@@ -73,14 +72,17 @@
   &__slider {
     margin: 95px 0px 0px 0px;
     p {
-      @include H3;
       line-height: 134.5%;
       letter-spacing: 0.02em;
     }
   }
   &__text {
     margin: 0px 0px 75px 0px;
-    min-height: 186px;
+    height: 186px;
+    overflow: hidden;
+    padding: 5px;
+    text-overflow: ellipsis;
+    @include H3;
   }
 
   &__appraisal-name {

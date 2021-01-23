@@ -1,0 +1,21 @@
+.faq {
+  margin: 180px 0px 0px 0px;
+  height: 880px;
+  background: url("../../img/faq-bg.svg") 100% 100% / 575px no-repeat, #f1f1f1;
+  &__row {
+    display: flex;
+  }
+
+  &__column {
+    max-width: 450px;
+  }
+
+  &__item {
+  }
+
+  &__question {
+  }
+
+  &__answer {
+  }
+}
